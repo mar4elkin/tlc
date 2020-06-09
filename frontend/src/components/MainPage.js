@@ -30,8 +30,8 @@ export default class MainPage extends React.Component {
         }
 
         const CardImg = {
-            height: '190px',
-            width: '285px'
+            height: '350px',
+            width: '485px'
         }
 
         return (
@@ -43,8 +43,25 @@ export default class MainPage extends React.Component {
                     return (
                         <ReactFullpage.Wrapper>
 
-                            <div className="section">
-                            <Jumbotron style={ImgHollder}>
+                            <div className="section main">
+                                <Container style={{display: 'flex', justifyContent: 'center'}}>
+                                    <Row>
+
+                                        <Col className="hvr-grow" onClick={() => fullpageApi.moveTo(3)}> 
+                                            <h4 style={{display: 'flex', justifyContent: 'center'}}>Таксомоторные перевозки</h4>                    
+                                            <Image id='item' style={CardImg} src={TaxiCard} rounded  />        
+                                            
+                                        </Col>
+
+                                        <Col className="hvr-grow" onClick={() => fullpageApi.moveTo(2)}>
+                                            <h4 style={{display: 'flex', justifyContent: 'center'}}>Перевозка Грузов</h4>
+                                            <Image id='item' style={CardImg} src={CargoCard} rounded  />     
+                                            
+                                        </Col>
+
+                                    </Row>
+                                </Container>
+                            {/* <Jumbotron style={ImgHollder}>
                                 <h1 class="huper">TLC</h1>
                                 <p class="huper">
                                     This is a simple hero unit, a simple jumbotron-style component for calling
@@ -58,30 +75,15 @@ export default class MainPage extends React.Component {
                                     This is a simple hero unit, a simple jumbotron-style component for calling
                                     extra attention to featured content or information.
                                 </p>
-                            </Jumbotron>
-                                <Container style={{display: 'flex', justifyContent: 'center'}}>
-                                    <Row>
-
-                                        <Col className="hvr-grow" onClick={() => fullpageApi.moveTo(3)}>                     
-                                            <Image id='item' style={CardImg} src={TaxiCard} rounded  />        
-                                            <h4>Таксомоторные перевозки</h4>
-                                        </Col>
-
-                                        <Col className="hvr-grow" onClick={() => fullpageApi.moveTo(2)}>
-                                            <Image id='item' style={CardImg} src={CargoCard} rounded  />     
-                                            <h4>Перевозка Грузов</h4>
-                                        </Col>
-
-                                    </Row>
-                                </Container>
+                            </Jumbotron> */}
 
                             </div>
 
-                            <div className="section">
+                            <div className="section cargo">
                                 <h1>Cargo</h1>
                             </div>
 
-                            <div className="section">
+                            <div className="section taxi">
                                 <h1>Taxi</h1>
                             </div>
 

@@ -1,20 +1,20 @@
 import React from 'react';
 import { NavDropdown, Form, Button, FormControl, Nav, Navbar } from 'react-bootstrap';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link, Redirect } from "react-router-dom";
 import  MainPage  from './MainPage';
+import MainPageCSS from './MainPage.css'
 
 export default class TLCHeader extends React.Component {
     
     render() {
 
         const NavBarStyle = {
-            background: 'rgba(89, 254, 195, 0.69)',
-            borderRadius: '20px',
-            marginTop: '5px',
-            width: '95%',
+            backgroundColor: 'white',
+            width: '100%',
             marginLeft:'auto',
             marginRight:'auto',
-            zIndex:'2'
+            zIndex:'2',
+            opacity: '1'
         }
 
         return (
@@ -27,29 +27,27 @@ export default class TLCHeader extends React.Component {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
                     
-                    <Link to="about">
-                        <Nav.Link href="#home">Ссылка</Nav.Link>
-                    </Link>
-                    <Link to="about">
-                        <Nav.Link href="#home">Ссылка</Nav.Link>
-                    </Link>
-                    <Link to="about">
-                        <Nav.Link href="#home">Ссылка</Nav.Link>
-                    </Link>
-                    <Link to="about">
-                        <Nav.Link href="#home">Ссылка</Nav.Link>
-                    </Link>
+                    
+                    <Nav.Link href="#home">Ссылка</Nav.Link>
+                    
+                    <Nav.Link href="#home">Ссылка</Nav.Link>
+                    
+                    
+                    <Nav.Link href="#home">Ссылка</Nav.Link>
+                    
+                    <Nav.Link href="#home">О компании</Nav.Link>
+                    
                     
                     </Nav>
                     <Form inline>
-                        <NavDropdown title="Перевозка Грузов" id="basic-nav-dropdown">
+                        <NavDropdown className='dropDEbase' title="Перевозка Грузов" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Все</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">что </NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.3">связонно</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action/3.4">с грузами</NavDropdown.Item>
                         </NavDropdown>
-                        <NavDropdown title="Таксомоторные перевозки" id="basic-nav-dropdown">
+                        <NavDropdown className='dropDEbase' title="Таксомоторные перевозки" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Все</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">что </NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.3">связонно</NavDropdown.Item>
