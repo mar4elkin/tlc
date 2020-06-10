@@ -1,0 +1,98 @@
+.card-text{
+    display: flex;
+    justify-content: center;
+    color:#eeeeee;
+}
+
+.card-image{
+    height: 350px;
+    width: 485px
+}
+
+.ct-holder{
+    display:flex; 
+    justify-content: center
+}
+
+.cargo-text, 
+.cargo-ul>li{
+    font-size: small;
+}
+
+.cargo-ul>li{
+    text-align:left;
+    
+}
+
+.cargo-jump{
+    width: 90%;
+}
+
+.fb>li{
+    font-size: large !important;
+}
+
+.bg-truck{
+    background-image: url(../../assets/cargo.png);
+    background-size: auto;
+    background-position: bottom;
+}
+
+.light{
+    color:#eeeeee;
+}
+
+.mg-b-10{
+    margin-bottom: 10px;
+}
+
+.ft-black {
+    color:black;
+}
+
+.tb-mg-10{
+    margin-top: 50px;
+}
+
+.table-img{
+    height: 50px;
+}
+
+h1{
+    font-size: 5em;
+    font-family: arial,helvetica;
+    color: #fff;
+    margin:0;
+    padding:0;
+}
+
+.section{
+    text-align:center;
+    display:block;
+}
+
+.xtr-small{
+    font-size: small;
+}
+
+.cargo-text-bigger{
+    font-size: large
+}
+
+.cargo-jump {
+    width: 90%;
+}
+
+.ct-holder {
+    display: flex;
+    justify-content: center;
+}
+
+.jopa > .col-lg-4 > .card {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.ft-black, .cardText {
+    color: black;
+}
