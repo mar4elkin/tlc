@@ -1,5 +1,63 @@
-/* Style for our header texts
-* --------------------------------------- */
+.card-text{
+    display: flex;
+    justify-content: center;
+    color:#eeeeee;
+}
+
+.card-image{
+    height: 350px;
+    width: 485px
+}
+
+.ct-holder{
+    display:flex; 
+    justify-content: center
+}
+
+.cargo-text, 
+.cargo-ul>li{
+    font-size: small;
+}
+
+.cargo-ul>li{
+    text-align:left;
+    
+}
+
+.cargo-jump{
+    width: 90%;
+}
+
+.fb>li{
+    font-size: large !important;
+}
+
+.bg-truck{
+    background-image: url(../../assets/cargo.png);
+    background-size: auto;
+    background-position: bottom;
+}
+
+.light{
+    color:#eeeeee;
+}
+
+.mg-b-10{
+    margin-bottom: 10px;
+}
+
+.ft-black {
+    color:black;
+}
+
+.tb-mg-10{
+    margin-top: 50px;
+}
+
+.table-img{
+    height: 50px;
+}
+
 h1{
     font-size: 5em;
     font-family: arial,helvetica;
@@ -8,67 +66,41 @@ h1{
     padding:0;
 }
 
-/* Centered texts in each section
-* --------------------------------------- */
 .section{
     text-align:center;
     display:block;
 }
 
+.xtr-small{
+    font-size: xx-small;
+}
 
-/* Backgrounds will cover all the section
-* --------------------------------------- */
+
 #section1,
 #section2,
-#section3{
+#section3,
+#section4,
+#section5{
     background-size: cover;
 }
 
-/* Defining each section background and styles
-* --------------------------------------- */
 #section1{
     /* background-image: url(../../assets/imgs/bg1.jpg); */
-    background-color: #00adb5;
+    background-color: #222831;
 }
-#section2{
-    background-color: #ffa299;
+#section2,
+#section3,
+#section4,
+#section5{
+    background-color: #303960;
 }
-#section3{
+/* #section3{
     background-color: #fcbf1e;
-}
+} */
 #section3 h1{
     color: #000;
 }
 
 
 
-#section1 h1{
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    top: 30px;
-    color: #fff;
-}
 
-#section2 .intro{
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    top: 30px;
-}
-#section2 h1,
-#section2 p{
-    text-shadow: 1px 5px 20px #000;
-}
-
-#section3 h1,
-#section3 p{
-    text-shadow: 1px 5px 20px #000;
-    color: #fff;
-}
-
-#infoMenu li a{
-        color: #fff;
-}

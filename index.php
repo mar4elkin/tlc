@@ -2,6 +2,9 @@
 <html>
   <head>
 
+    <!-- fontawesome -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
@@ -10,7 +13,10 @@
     
     <!-- pagepiling  -->
     <link rel="stylesheet" type="text/css" href="libs/pagePiling/jquery.pagepiling.css" />
-	  <script type="text/javascript" src="libs/pagePiling/jquery.pagepiling.min.js"></script>
+    <script type="text/javascript" src="libs/pagePiling/jquery.pagepiling.min.js"></script>
+    
+    <!-- hover css -->
+    <link rel="stylesheet" type="text/css" href="libs/Hover/css/hover.css" />
     
     <title>TLC</title>
   </head>

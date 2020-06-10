@@ -1,0 +1,5 @@
+.nv-fix{
+    position:fixed;
+    z-index: 70;
+    width: 100%;
+}
