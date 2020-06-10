@@ -72,15 +72,21 @@ h1{
 }
 
 .xtr-small{
-    font-size: xx-small;
+    font-size: small;
 }
 
+.cargo-text-bigger{
+    font-size: large
+}
 
 #section1,
 #section2,
 #section3,
 #section4,
-#section5{
+#section5,
+#section6,
+#section7,
+#section8{
     background-size: cover;
 }
 
@@ -88,10 +94,14 @@ h1{
     /* background-image: url(../../assets/imgs/bg1.jpg); */
     background-color: #222831;
 }
+#section1,
 #section2,
 #section3,
 #section4,
-#section5{
+#section5,
+#section6,
+#section7,
+#section8{
     background-color: #303960;
 }
 /* #section3{

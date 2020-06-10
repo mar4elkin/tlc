@@ -40,6 +40,8 @@
 					$dirWorker = new DirWorker;
 					$carsImg = $dirWorker->dirFiles('../../assets/cars', '.jpg');
 
+					$path = $_SERVER['DOCUMENT_ROOT'].'/assets/cars_t/';
+
 
 					foreach ($carsImg as $key => $value) {
 							echo '	<tr>
@@ -49,7 +51,7 @@
 									<td>
 									<img class="table-img" src="../../assets/cars_m/'. $value .'" />
 									</td>
-									<td class="xtr-small">'. $dirWorker->readFile("assets/cars_t/". $value .".txt", true) . '</td>
+									<td class="xtr-small">'. file_get_contents( $path. explode('.', $value)[0].'.txt', true) . '</td>
 									</tr>
                                 ';
                     }
