@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  nodejs:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/usr/src/app
+  nginx:
+    restart: always
+    image: nginx:1.17.4-alpine
+    ports:
+       - "80:80"
+       - "443:443"
+    volumes:
+       - ./nginx:/etc/nginx/conf.d
+    depends_on:
+       - nodejs
