@@ -1,0 +1,162 @@
+
+<!doctype html>
+<html>
+  <head>
+
+    <!-- main css -->
+    <link rel="stylesheet" type="text/css" href="main.css" />
+
+    <!-- fontawesome -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- hover css -->
+	<link rel="stylesheet" type="text/css" href="libs/Hover/css/hover.css" />
+    
+    <title>TLC</title>
+  </head>
+  <header>
+    <nav style="position: fixed;width: 100%;top: 0; z-index: 99;" class="nv-fix navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="/">TLC</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <div class="navbar ml-auto" id="navbarNavDropdown">
+				<ul class="navbar-nav w-100">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Грузоперевозки </a>
+						<div class="dropdown-menu dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="#">Грузоперевозки</a>
+							<a class="dropdown-item" href="#1">Преимущества</a>
+							<a class="dropdown-item" href="#2">Список Услуг</a>
+							<a class="dropdown-item" href="#3">Тарифы</a>
+							<a class="dropdown-item" href="#4">Автопарк</a>
+							<a class="dropdown-item" href="#5">Контакты</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+				<div class="navbar" id="navbarNavDropdown">
+					<ul class="navbar-nav w-100">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Такси </a>
+							<div class="dropdown-menu dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<a class="dropdown-item" href="#page2">Такси</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		  </nav>
+      </header>
+  <body style="background-color: #FB9403;">
+
+
+
+    <div style="margin-top:150px;" class="section" id="section2">
+		<a name="1"></a>
+		<div class="ct-holder">
+				<div class="jumbotron cargo-jump bg-taxi">
+					<h4 class="light taxibg">ПОЕЗДКИ ИЗ ГОРОДА В АЭРОПОРТ</h4>
+                    <h4 class="light taxibg">ОТ ОФИЦИАЛЬНОГО ПЕРЕВОЗЧИКА АЭРОПОРТА ПУЛКОВО</h4>
+                    <h4 class="light taxibg">ТЕЛЕФОН ДЛЯ ЗАКАЗА ТАКСИ: 8 (812) 677-86-35</h4>
+					
+						
+				</div>
+			</div>
+    </div>
+
+    <div class="ct-holder">
+        <a name="2"></a>
+        <div class="jumbotron cargo-jump">
+            <h4 class="">О КОМПАНИИ ТАКСИ ПУЛКОВО</h4>
+            <hr class="my-4">
+            <p class="cargo-text text-justify">«Такси Пулково» - единственный официальный перевозчик аэропорта Пулково. Приоритетом компании является предоставление качественных и безопасных услуг для пассажиров, пребывающих в г. Санкт-Петербург и не только.</p>
+            <p class="cargo-text text-justify">При работе «Такси Пулково» руководствуется жёсткими стандартами отбора автомобилей и водителей такси.</p>
+            <p class="cargo-text text-justify">Выбирая нас, Вы будете уверены в том, что на стойках «Такси Пулково» Вас встретят администраторы, которые предоставят все необходимые инструкции (в том числе на английском языке), ответят на возникшие вопросы и, при необходимости, проводят к машине.</p>
+            <hr class="my-4">
+            <h5 class="cargo-jump">МЫ ЦЕНИМ ВАШЕ ВРЕМЯ И КОМФОРТ</h5>
+            <ul class="cargo-ul"> 
+                
+                <li>Современный автопарк</li>
+                <li>Стойки заказа в Пулково</li>
+                <li>Быстрая подача авто</li>
+                <li>Условия для всех пассажиров</li>
+                <li>Профессиональные водители</li>
+                <li>Опытные операторы</li>
+                <li>Безналичный расчет</li>
+                <li>Круглосуточно</li>
+                
+            </ul>
+        </div>
+    </div>
+    <div class="ct-holder">
+        <a name="3"></a>
+        <div class="jumbotron cargo-jump">
+            <h4 class="">Тарифы</h4>
+            <hr class="my-4">
+            <% for (var i=0; i < tarifs.length; i++) {%>
+                <h6><%= tarifs[i]%></h6>
+                <div>
+                    <table class="table table-dark" style="width: 100%; max-width: 100%; overflow-y : scroll; display:block;">
+                        <thead>
+                            <tr>
+                                <th scope="row">#</th>
+                                <% for (var j=0; j < place.length; j++) {%>
+                                    <th scope="col" style="font-size: small;"><%= place[j]%> </th>
+                                <%} %>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Цена</th>
+                                <% 
+                                    var priceSelected = 0;
+                                    if (i == 0) {
+                                        priceSelected = priceLowcost;
+                                    }
+
+                                    if (i == 1) {
+                                        priceSelected = priceComfort;
+                                    }
+
+                                    if (i == 2) {
+                                        priceSelected = priceBisnes;
+                                    }
+
+                                    if (i == 3) {
+                                        priceSelected = priceMiniven;
+                                    }
+
+                                    if (i == 4) {
+                                        priceSelected = priceVip;
+                                    }
+
+                                    for (var z=0; z < priceSelected.length; z++) {%>
+                                    <td scope="col" style="font-size: small;"><%= priceSelected[z]%> </td>
+                                <%} %>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            <%} %>
+            
+        </div>
+    </div>
+    
+
+
+
+    <!-- bootstrap cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+  </body>
+</html>

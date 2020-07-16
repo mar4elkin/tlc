@@ -38,6 +38,14 @@
     background-position: bottom;
 }
 
+.bg-taxi{
+    background-image: url(../../assets/taxibg.jpg);
+    background-size: auto;
+    background-position: bottom;
+    height: 400px;
+    
+}
+
 .light{
     color:#eeeeee;
 }
@@ -95,4 +103,8 @@ h1{
 
 .ft-black, .cardText {
     color: black;
+}
+
+.taxibg {
+    text-align: center;
 }
