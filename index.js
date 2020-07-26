@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const ejs = require('ejs');
+const fs = require('fs');
 
 
 app.use(express.static('public')); 
@@ -51,6 +52,74 @@ var priceVip = [
     "5000", "4500 - 5500", "5500", "6000", "6300", "6300 - 7000", "6800 - 7000" 
 ];
 
+function getTaxiImages(path){
+    let tpath = 'public/assets/TaxiCars/' + path;
+    let taxiarr = [];
+    let farr = [];
+    let staxiarr = [];
+
+    fs.readdirSync(tpath).forEach(file => {
+        taxiarr.push(file);
+    });
+
+    taxiarr.forEach(el => staxiarr.push(parseInt(el.split('.')[0])));
+    staxiarr.sort(function(a, b) {
+        return a - b;
+      }).forEach(el => farr.push('assets/TaxiCars/' + path + "/" + el + '.jpg'));
+
+    return farr;
+}
+
+function taxiArrs(){
+    
+    let ltext = ['Nissan Almera', 'Kia Ceed', 'Chevrolet Cruze', 'Ford Focus', 'Hyundai ix 35', 'Skoda Rapid', 'Kia RIO', 'Skoda Octavia', 'Hyundai Solaris', 'Volkswagen Jetta', 'Volkswagen Polo']
+    let ctext = ['Ford Mondeo', 'Kia Optima', 'Skoda Superb', 'Toyota Camry']
+    let btext = ['Audi A6', 'Lexus ES 250', 'Mercedes E220', 'Genesis G80']
+    let mtext = ['Citroen Jumpy', 'Ford Tourneo', 'Hyundai Starex', 'Volkswagen Caravelle', 'Hyundai H-1', 'Peugeot expert']
+    let vtext = ['Audi A8 Long Premium', 'Mercedes S500 (W222)', 'BMW 750 LI']
+
+    let l = getTaxiImages('lowcost');
+    let c = getTaxiImages('comfort');
+    let b = getTaxiImages('bisnes');
+    let m = getTaxiImages('miniven');
+    let v = getTaxiImages('vip');
+
+    let lowcost = {
+        imgs: l,
+        text: ltext
+    }
+
+    let comfort = {
+        imgs: c,
+        text: ctext
+    }
+
+    let bisnes = {
+        imgs: b,
+        text: btext
+    }
+
+    let miniven = {
+        imgs: m,
+        text: mtext
+    }
+
+    let vip = {
+        imgs: v,
+        text: vtext
+    }
+
+    let obj = {
+        lowcost,
+        comfort,
+        bisnes,
+        miniven,
+        vip
+      };
+    
+    return obj;
+}
+
 
 app.use("/cargo", function(request, response){
      
@@ -68,7 +137,13 @@ app.use("/taxi", function(request, response){
         priceComfort: priceComfort,
         priceBisnes: priceBisnes,
         priceMiniven: priceMiniven,
-        priceVip: priceVip
+        priceVip: priceVip,
+        // lowcostImg: getTaxiImages('lowcost'),
+        // comfortImg: getTaxiImages('comfort'),
+        // bisnesImg: getTaxiImages('bisnes'),
+        // minivenImg: getTaxiImages('miniven'),
+        // vipImg: getTaxiImages('vip'),
+        taxiArrs: taxiArrs(),
     });
 });
 

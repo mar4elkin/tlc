@@ -75,11 +75,11 @@
     <div class="ct-holder">
         <a name="2"></a>
         <div class="jumbotron cargo-jump">
-            <h4 class="">О КОМПАНИИ ТАКСИ ПУЛКОВО</h4>
+            <h4 class="">О КОМПАНИИ «TLC»</h4>
             <hr class="my-4">
-            <p class="cargo-text text-justify">«Такси Пулково» - единственный официальный перевозчик аэропорта Пулково. Приоритетом компании является предоставление качественных и безопасных услуг для пассажиров, пребывающих в г. Санкт-Петербург и не только.</p>
-            <p class="cargo-text text-justify">При работе «Такси Пулково» руководствуется жёсткими стандартами отбора автомобилей и водителей такси.</p>
-            <p class="cargo-text text-justify">Выбирая нас, Вы будете уверены в том, что на стойках «Такси Пулково» Вас встретят администраторы, которые предоставят все необходимые инструкции (в том числе на английском языке), ответят на возникшие вопросы и, при необходимости, проводят к машине.</p>
+            <p class="cargo-text text-justify">«TLC» - единственный официальный перевозчик аэропорта Пулково. Приоритетом компании является предоставление качественных и безопасных услуг для пассажиров, пребывающих в г. Санкт-Петербург и не только.</p>
+            <p class="cargo-text text-justify">При работе ««TLC»» руководствуется жёсткими стандартами отбора автомобилей и водителей такси.</p>
+            <p class="cargo-text text-justify">Выбирая нас, Вы будете уверены в том, что на стойках ««TLC»» Вас встретят администраторы, которые предоставят все необходимые инструкции (в том числе на английском языке), ответят на возникшие вопросы и, при необходимости, проводят к машине.</p>
             <hr class="my-4">
             <h5 class="cargo-jump">МЫ ЦЕНИМ ВАШЕ ВРЕМЯ И КОМФОРТ</h5>
             <ul class="cargo-ul"> 
@@ -152,7 +152,352 @@
     </div>
     
 
+    <div style="margin-bottom: 30px;" class="section" id="section7">
+        <a name="4"></a>
 
+		
+                <h2>Эконом класс</h2>
+				<div class="container">
+                    <div class="row mr-md-1 jopa">
+                        
+                        <% for (var i=0; i < taxiArrs["lowcost"]['imgs'].length; i++) {%>
+                            
+                                    <div class="col-lg-4 hideMePLZZZZZ1" id="hideMePLZ">
+                                        <div class="card" style="width: 18rem;">
+                                            <div id="carouselExampleControls0" class="carousel slide" data-interval="false" data-ride="carousel">
+                                                <div class="carousel-inner">
+                    
+                                                    <div class="carousel-item active cardImg">
+                                                    <img class="d-block w-100" src="<%= taxiArrs['lowcost']['imgs'][i] %>" alt="First slide">
+                                                </div>
+                
+                                                </div>
+                                            </div>
+
+                                            <div class="card-body">
+                                            <p class="card-text cardText textMustBeSHort"><%= taxiArrs['lowcost']['text'][i] %></p>
+                                            <a href="#4"></a>
+                                            </div>
+                                        </div>
+                                    </div>	
+                                    <%} %>
+                                </div>
+                    
+                    
+				
+					<div class="d-flex justify-content-center" style="margin-bottom: 20px;">
+						<button onclick="myFunction('1')" type="button" id="but" class="buttonKKKKek btn btn-primary btn-lg">Показать все</button>
+					</div>
+                </div>
+                
+                <h2>Комфорт класс</h2>
+				<div class="container">
+                    <div class="row mr-md-1 jopa">
+                        
+                        <% for (var i=0; i < taxiArrs["comfort"]['imgs'].length; i++) {%>
+                            
+                                    <div class="col-lg-4 hideMePLZZZZZ2" id="hideMePLZ">
+                                        <div class="card" style="width: 18rem;">
+                                            <div id="carouselExampleControls0" class="carousel slide" data-interval="false" data-ride="carousel">
+                                                <div class="carousel-inner">
+                    
+                                                    <div class="carousel-item active cardImg">
+                                                    <img class="d-block w-100" src="<%= taxiArrs['comfort']['imgs'][i] %>" alt="First slide">
+                                                </div>
+                
+                                                </div>
+                                            </div>
+
+                                            <div class="card-body">
+                                            <p class="card-text cardText textMustBeSHort"><%= taxiArrs['comfort']['text'][i] %></p>
+                                            <a href="#4"></a>
+                                            </div>
+                                        </div>
+                                    </div>	
+                                    <%} %>
+                                </div>
+                    
+                    
+				
+					<div class="d-flex justify-content-center" style="margin-bottom: 20px;">
+						<button onclick="myFunction('2')" type="button" id="but" class="buttonKKKKek btn btn-primary btn-lg">Показать все</button>
+					</div>
+                </div>
+                
+                <h2>Бизнес класс</h2>
+				<div class="container">
+                    <div class="row mr-md-1 jopa">
+                        
+                        <% for (var i=0; i < taxiArrs["bisnes"]['imgs'].length; i++) {%>
+                            
+                                    <div class="col-lg-4 hideMePLZZZZZ" id="hideMePLZ">
+                                        <div class="card" style="width: 18rem;">
+                                            <div id="carouselExampleControls0" class="carousel slide" data-interval="false" data-ride="carousel">
+                                                <div class="carousel-inner">
+                    
+                                                    <div class="carousel-item active cardImg">
+                                                    <img class="d-block w-100" src="<%= taxiArrs['bisnes']['imgs'][i] %>" alt="First slide">
+                                                </div>
+                
+                                                </div>
+                                            </div>
+
+                                            <div class="card-body">
+                                            <p class="card-text cardText textMustBeSHort"><%= taxiArrs['bisnes']['text'][i] %></p>
+                                            <a href="#4"></a>
+                                            </div>
+                                        </div>
+                                    </div>	
+                                    <%} %>
+                                </div>
+                    
+                    
+				
+					<!-- <div class="d-flex justify-content-center" style="margin-bottom: 20px;">
+						<button onclick="myFunction('3')" type="button" id="but" class="buttonKKKKek btn btn-primary btn-lg">Показать все</button>
+					</div> -->
+                </div>
+                
+                <h2>Минивэн</h2>
+				<div class="container">
+                    <div class="row mr-md-1 jopa">
+                        
+                        <% for (var i=0; i < taxiArrs["miniven"]["imgs"].length; i++) {%>
+                            
+                                    <div class="col-lg-4 hideMePLZZZZZ4" id="hideMePLZ">
+                                        <div class="card" style="width: 18rem;">
+                                            <div id="carouselExampleControls0" class="carousel slide" data-interval="false" data-ride="carousel">
+                                                <div class="carousel-inner">
+                    
+                                                    <div class="carousel-item active cardImg">
+                                                    <img class="d-block w-100" src="<%= taxiArrs['miniven']['imgs'][i] %>" alt="First slide">
+                                                </div>
+                
+                                                </div>
+                                            </div>
+
+                                            <div class="card-body">
+                                            <p class="card-text cardText textMustBeSHort"><%= taxiArrs['miniven']['text'][i] %></p>
+                                            <a href="#4"></a>
+                                            </div>
+                                        </div>
+                                    </div>	
+                                    <%} %>
+                                </div>
+                    
+                    
+				
+					<div class="d-flex justify-content-center" style="margin-bottom: 20px;">
+						<button onclick="myFunction('4')" type="button" id="but" class="buttonKKKKek btn btn-primary btn-lg">Показать все</button>
+					</div>
+                </div>
+                
+                <h2>VIP</h2>
+				<div class="container">
+                    <div class="row mr-md-1 jopa">
+                        
+                        <% for (var i=0; i < taxiArrs["vip"]['imgs'].length; i++) {%>
+                            
+                                    <div class="col-lg-4 hideMePLZZZZZ5" id="hideMePLZ">
+                                        <div class="card" style="width: 18rem;">
+                                            <div id="carouselExampleControls0" class="carousel slide" data-interval="false" data-ride="carousel">
+                                                <div class="carousel-inner">
+                    
+                                                    <div class="carousel-item active cardImg">
+                                                    <img class="d-block w-100" src="<%= taxiArrs['vip']['imgs'][i] %>" alt="First slide">
+                                                </div>
+                
+                                                </div>
+                                            </div>
+
+                                            <div class="card-body">
+                                            <p class="card-text cardText textMustBeSHort"><%= taxiArrs['vip']['text'][i] %></p>
+                                            <a href="#4"></a>
+                                            </div>
+                                        </div>
+                                    </div>	
+                                    <%} %>
+                                </div>
+                    
+                    
+				
+					<!-- <div class="d-flex justify-content-center" style="margin-bottom: 20px;">
+						<button onclick="myFunction('5')" type="button" id="but" class="buttonKKKKek btn btn-primary btn-lg">Показать все</button>
+					</div> -->
+				</div>
+
+        
+        
+
+    </div>
+    
+    <div style="margin-bottom: 30px;" class="section" id="section7">
+        <a name="5"></a>
+		<div class="ct-holder">
+			<div class="card" style="width: 80%;">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A88d87182b28434faa2d02c0f55d5dafd39f5cc610c726ad560cba5c1346846a5&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+				<div class="card-body">
+					<h5 class="card-title">Адрес офиса:</h5>
+					<p class=" cargo-text text-center">ООО "ТЛК"
+						
+						Санкт-Петербург, Дворцовая площадь,дом 1. корп.2 литер «А», офис 20
+						Контактные телефоны:</p>
+						<p class=" cargo-text text-center">
+						8 (812) 111-11-11(тел/факс), <br>
+						8-921-111-11-11,<br>
+						8-911-111-11-11,<br>
+						8-999-111-11-11
+						</p>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+    <script>
+        var cardElmCLASS1 = document.getElementsByClassName('hideMePLZZZZZ1');
+        
+        var cardElmCLASS2 = document.getElementsByClassName('hideMePLZZZZZ2');
+        
+        var cardElmCLASS3 = document.getElementsByClassName('hideMePLZZZZZ3');
+        
+        var cardElmCLASS4 = document.getElementsByClassName('hideMePLZZZZZ4');
+        
+        var cardElmCLASS5 = document.getElementsByClassName('hideMePLZZZZZ5');
+        
+
+		
+		for (let i=0; i < cardElmCLASS1.length; i++ ){
+			if (i < 3){
+				continue;
+			} else {
+				cardElmCLASS1[i].style.display = 'none'
+			}
+
+        }
+        
+        for (let i=0; i < cardElmCLASS2.length; i++ ){
+			if (i < 3){
+				continue;
+			} else {
+				cardElmCLASS2[i].style.display = 'none'
+			}
+
+        }
+        
+        for (let i=0; i < cardElmCLASS3.length; i++ ){
+			if (i < 3){
+				continue;
+			} else {
+				cardElmCLASS3[i].style.display = 'none'
+			}
+
+        }
+        
+        for (let i=0; i < cardElmCLASS4.length; i++ ){
+			if (i < 3){
+				continue;
+			} else {
+				cardElmCLASS4[i].style.display = 'none'
+			}
+
+        }
+        
+        for (let i=0; i < cardElmCLASS5.length; i++ ){
+			if (i < 3){
+				continue;
+			} else {
+				cardElmCLASS5[i].style.display = 'none'
+			}
+
+		}
+
+
+		function myFunction(ind) {
+            if (ind == 1) {
+                if (cardElmCLASS1[4].style.display === "none") {
+                    for (let i=3; i < cardElmCLASS1.length; i++ ){
+                        cardElmCLASS1[i].style.display = 'block'
+                        document.getElementById("but").innerHTML="Скрыть";
+                    }
+                } else {
+
+                    for (let i=3; i < cardElmCLASS1.length; i++ ){
+                        cardElmCLASS1[i].style.display = 'none'
+                        document.getElementById("but").innerHTML="Показать все";
+                    }
+
+                }
+            }
+
+            if (ind == 2) {
+                if (cardElmCLASS2[4].style.display === "none") {
+                    for (let i=3; i < cardElmCLASS2.length; i++ ){
+                        cardElmCLASS2[i].style.display = 'block'
+                        document.getElementById("but").innerHTML="Скрыть";
+                    }
+                } else {
+
+                    for (let i=3; i < cardElmCLASS2.length; i++ ){
+                        cardElmCLASS2[i].style.display = 'none'
+                        document.getElementById("but").innerHTML="Показать все";
+                    }
+
+                }
+            }
+
+            if (ind == 3) {
+                if (cardElmCLASS3[4].style.display === "none") {
+                    for (let i=3; i < cardElmCLASS3.length; i++ ){
+                        cardElmCLASS3[i].style.display = 'block'
+                        document.getElementById("but").innerHTML="Скрыть";
+                    }
+                } else {
+
+                    for (let i=3; i < cardElmCLASS3.length; i++ ){
+                        cardElmCLASS3[i].style.display = 'none'
+                        document.getElementById("but").innerHTML="Показать все";
+                    }
+
+                }
+            }
+
+            if (ind == 4) {
+                if (cardElmCLASS4[4].style.display === "none") {
+                    for (let i=3; i < cardElmCLASS4.length; i++ ){
+                        cardElmCLASS4[i].style.display = 'block'
+                        document.getElementById("but").innerHTML="Скрыть";
+                    }
+                } else {
+
+                    for (let i=3; i < cardElmCLASS4.length; i++ ){
+                        cardElmCLASS4[i].style.display = 'none'
+                        document.getElementById("but").innerHTML="Показать все";
+                    }
+
+                }
+            }
+
+            if (ind == 5) {
+                if (cardElmCLASS5[4].style.display === "none") {
+                    for (let i=3; i < cardElmCLASS5.length; i++ ){
+                        cardElmCLASS5[i].style.display = 'block'
+                        document.getElementById("but").innerHTML="Скрыть";
+                    }
+                } else {
+
+                    for (let i=3; i < cardElmCLASS5.length; i++ ){
+                        cardElmCLASS5[i].style.display = 'none'
+                        document.getElementById("but").innerHTML="Показать все";
+                    }
+
+                }
+            }
+		}
+
+		
+
+	</script>
 
     <!-- bootstrap cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
