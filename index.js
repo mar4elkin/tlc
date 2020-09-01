@@ -53,7 +53,7 @@ var priceVip = [
 ];
 
 function getTaxiImages(path){
-    let tpath = 'public/assets/TaxiCars/' + path;
+    let tpath = 'public/assets/taxiCars/' + path;
     let taxiarr = [];
     let farr = [];
     let staxiarr = [];
@@ -65,7 +65,7 @@ function getTaxiImages(path){
     taxiarr.forEach(el => staxiarr.push(parseInt(el.split('.')[0])));
     staxiarr.sort(function(a, b) {
         return a - b;
-      }).forEach(el => farr.push('assets/TaxiCars/' + path + "/" + el + '.jpg'));
+      }).forEach(el => farr.push('assets/taxiCars/' + path + "/" + el + '.jpg'));
 
     return farr;
 }
@@ -138,11 +138,6 @@ app.use("/taxi", function(request, response){
         priceBisnes: priceBisnes,
         priceMiniven: priceMiniven,
         priceVip: priceVip,
-        // lowcostImg: getTaxiImages('lowcost'),
-        // comfortImg: getTaxiImages('comfort'),
-        // bisnesImg: getTaxiImages('bisnes'),
-        // minivenImg: getTaxiImages('miniven'),
-        // vipImg: getTaxiImages('vip'),
         taxiArrs: taxiArrs(),
     });
 });
